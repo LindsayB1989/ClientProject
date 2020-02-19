@@ -131,7 +131,7 @@ def frameAllImages(directory=None):
         print n
         filename, filetype = os.path.splitext(file_list[n])
         
-        #Was intended to add the frame with the default thickness to the images, but failed because the frameOneImage function's originalImage was not a PIL.Image and the methods of the class won't work.
+        #Was intended to add the frame with the default thickness to the images, but failed because the object originalImage in the frameOneImage() function was not a PIL.Image and the methods of the class won't work.
         curr_image = image_list[n]
         new_image = frameOneImage(curr_image) 
         
