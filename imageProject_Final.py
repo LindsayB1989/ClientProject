@@ -10,7 +10,8 @@ def frameImage(originalImage, borderThickness=x):
     '''Puts a frame around the image that you select.
     The thickness of the border may be changed with the variable x above.
     Also, squares will be placed on the corners of the border.
-    Text is also created and is centered on the bottom border of the picture frame.'''
+    Text is also created and is centered on the bottom border of the picture frame.
+    The function is used to show the features that were not possible with the frameAllImages() funciton.'''
     
     #get the selected image from the current directory
     directory = os.path.dirname(os.path.abspath(__file__))
