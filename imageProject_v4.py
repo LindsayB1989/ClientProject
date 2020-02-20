@@ -46,15 +46,13 @@ def frameOneImage(originalImage, borderThickness=x):
     The thickness of the border may be changed with the variable x above.
     Also, squares will be placed on the corners of the border.
     Text is also created and is centered on the bottom border of the picture frame.'''
-    '''
+    
     #Was intended to get the selected image from the current directory, yet failed because originalImage was not a PIL.Image file to begin with
-    directory = os.path.dirname(os.path.abspath(__file__))  
+    '''directory = os.path.dirname(os.path.abspath(__file__))  
     original_file = os.path.join(directory, originalImage)
     original_img = PIL.Image.open(original_file)
     image_small = original_img.resize((200, 300))
     '''
-    
-    originalImage = originalImage.resize((200, 300))
     
     #creates the frame by adding a rectangle on each side
     width, height = originalImage.size
@@ -139,5 +137,5 @@ def frameAllImages(directory=None):
         curr_image = frameOneImage(curr_image) 
         
         #Intended to save the altered image, but failed because the save method is only for the PIL.Image class, not PIL.ImageDraw.
-        new_image_filename = os.path.join(new_directory, filename + '.jpg')
-        curr_image.save(new_image_filename)
+        '''new_image_filename = os.path.join(new_directory, filename + '.jpg')
+        curr_image.save(new_image_filename)'''
