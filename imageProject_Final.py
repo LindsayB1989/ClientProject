@@ -46,9 +46,9 @@ def frameOneImage(originalImage, borderThickness=x):
     The thickness of the border may be changed with the variable x above.
     Also, squares will be placed on the corners of the border.
     Text is also created and is centered on the bottom border of the picture frame.'''
-    '''
+    
     #Was intended to get the selected image from the current directory, yet failed because originalImage was not a PIL.Image file to begin with
-    directory = os.path.dirname(os.path.abspath(__file__))  
+    '''directory = os.path.dirname(os.path.abspath(__file__))  
     original_file = os.path.join(directory, originalImage)
     original_img = PIL.Image.open(original_file)
     image_small = original_img.resize((200, 300))
